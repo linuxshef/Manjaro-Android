@@ -25,14 +25,6 @@ pkg install -y wget proot pv pulseaudio git ; cd ~/ ; git clone https://github.c
 
 ## Install Manjaro cli only and install DE or WM manually
 
-1. Install wget and get `manjaro.sh` script
-    ```
-    pkg install -y wget proot pv pulseaudio
-    wget https://raw.githubusercontent.com/krmanik/Manjaro-Linux-on-Android/master/manjaro.sh
-    chmod +x manjaro.sh
-    ./manjaro.sh
-    ```
-
     Note: Do not install `tigervnc` and desktop environment like `xfce4`, instead install it manually. 
     
     So, select `None` from Manjaro setup menu `None`, `xfce4`, `LxQt`, `Mate`, `i3`
