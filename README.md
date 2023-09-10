@@ -2,30 +2,21 @@
 --------------------------------------
 
 
-Установка Manjaro в Termux -> Mod by LinuxShef
+# Установка Manjaro в Termux -> Mod by LinuxShef
+
+Скрпировать и вставить в Termux
+
+```bash
+pkg install -y wget proot pv pulseaudio git ; cd ~/ ; git clone https://github.com/linuxshef/Manjaro-Android.git ; cd Manjaro-Android ; ./run
+```
+
 
 
 
 
 -----------------------------------------
-
-
-Внизу старая шапка репозитория
-
-
+# Внизу старая шапка репозитория
 -----------------------------------------
-Install Manjaro on Android using Termux
-
-## Get preinstalled xfce4 and vncserver Manjaro rootfs
-Just download and proot into rootfs using Termux
-
-View [manjaro-rootfs-arm64](https://github.com/krmanik/manjaro-fs-arm64)
-
-
-## Note: Tigervnc 1.11.0 have issues running vncserver.
-It is recommended to downgrade Tigervnc to 1.10.1. [View this for more](https://github.com/krmanik/Manjaro-Linux-on-Android/issues/5)
-
-
 ## Requirements
 - Android device running arm64 architecture and minimum version of 7.0 Nougat.
 - At least 5GB free storage space

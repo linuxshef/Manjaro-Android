@@ -1,0 +1,13 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+pkg install -y wget proot pv pulseaudio git
+
+cd ~/
+
+cd Manjaro-Android
+
+mv manjaro.sh ~/
+
+cd ~/
+
+rm -Rf
