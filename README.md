@@ -1,4 +1,19 @@
 # Manjaro Linux on Android
+--------------------------------------
+
+
+Установка Manjaro в Termux -> Mod by LinuxShef
+
+
+
+
+-----------------------------------------
+
+
+Внизу старая шапка репозитория
+
+
+-----------------------------------------
 Install Manjaro on Android using Termux
 
 ## Get preinstalled xfce4 and vncserver Manjaro rootfs
@@ -16,14 +31,6 @@ It is recommended to downgrade Tigervnc to 1.10.1. [View this for more](https://
 - At least 5GB free storage space
 - Termux
 - A VNC viewer
-
-## Quick Start
-Copy this and paste it in termux and follow steps to install
-
-```
-pkg install -y wget proot pv pulseaudio && wget https://raw.githubusercontent.com/krmanik/Manjaro-Linux-on-Android/master/manjaro.sh && chmod +x manjaro.sh && ./manjaro.sh
-```
-
 
 ## Install Manjaro cli only and install DE or WM manually
 

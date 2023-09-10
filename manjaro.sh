@@ -134,10 +134,10 @@ chmod -cf 2755 /var/log/journal
 
 ## Update and install the base and sudo packages
 ## pacman-mirrors -gf
-pacman-mirrors --country Germany,France,Austria
+pacman-mirrors --fasttrack
 pacman-key --init
 pacman-key --populate
-pacman -Syyuu --noconfirm base sudo manjaro-release
+pacman -Syyuu --noconfirm base base-devel sudo manjaro-release
 .
 if [[ ! -z ${edition} ]]; then
   manjaro_packages="https://gitlab.manjaro.org/manjaro-arm/applications/arm-profiles/-/raw/master/editions/${edition}?inline=false"
@@ -234,7 +234,7 @@ install() {
       continue
     fi
     mkdir -p "${directory}" 2>&1 >/dev/null
-    manjaro_rootfs="https://osdn.net/projects/manjaro-arm/storage/.rootfs/Manjaro-ARM-aarch64-latest.tar.gz"
+    manjaro_rootfs="https://github.com/manjaro-arm/rootfs/releases/download/20230904/Manjaro-ARM-aarch64-latest.tar.gz"
     size=$(curl -sLI "${manjaro_rootfs}" | awk '/content-length/ {printf "%i", ($2/1024)/1024}')
     (curl -sL "${manjaro_rootfs}" | pv -ns "${size}m" - | proot -l tar -xzf - -C "${directory}") 2>&1 | \
       dialog --title "Manjaroid install" --gauge "Installing Manjaro (${size}MB)..." -1 -1
