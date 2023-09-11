@@ -9,7 +9,11 @@
 ```bash
 pkg install -y wget proot pv pulseaudio git ; cd ~/ ; git clone https://github.com/linuxshef/Manjaro-Android.git ; cd Manjaro-Android ; ./run
 ```
+# Автозапуск
 
+```bash
+cd ~/ ; git clone https://github.com/linuxshef/Manjaro-Android.git ; cd Manjaro-Android ; ./manjaro_up
+```
 
 
 
@@ -258,6 +262,3 @@ For example: xfce4, run this to install xfce4.
 ```
 sudo pacman -S xfce4 xfce4-goodies
 ```
-# Credits
-ItsMeKuroro<br>
-[https://forum.manjaro.org](https://forum.manjaro.org/t/how-to-run-the-official-manjaro-arm-edition-on-android-with-chroot-environment/151429)

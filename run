@@ -4,7 +4,7 @@ mv manjaro.sh ~/
 
 cd ~/
 
-rm -Rf Manjaro-Androi
+rm -Rf Manjaro-Android
 
 ./manjaro.sh
 

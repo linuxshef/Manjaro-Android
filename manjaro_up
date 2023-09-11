@@ -1,0 +1,9 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+mv startmanjaro ~/
+
+cd ~/
+
+rm manjaro.sh
+
+rm -Rf Manjaro-Android
